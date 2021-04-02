@@ -1,0 +1,11 @@
+li[class] {
+    font-size: 200%;
+}
+
+li[class="a"] {
+    background-color: royalblue;
+}
+
+li[class~="a"] {
+    color: slateblue;
+}

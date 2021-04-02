@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon for website -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/logo/favicon/site.webmanifest">
+
+    <title>Apni Kaksha | Home</title>
+
+    <!-- Linking Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- Linking Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- >>>Change the header bg and add the gif remove the text -->
+    <header>
+        <div class="banner"></div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <!-- >>>Change Home with the logo -->
+            <a href="#">
+                <img class="logo" src="./assets/logo/logo-small-white.png" alt="Logo Apni Kaksha">
+            </a>
+            <a class="menu-btn" href="#">College Reviews</a>
+            <a class="menu-btn" href="#">Courses</a>
+            <a class="menu-btn" href="#">Study Material</a>
+            <a class="menu-btn" href="#">Practice Problems</a>
+            <a class="menu-btn flex-align-left" href="#">Login/SignUp</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2><span>Courses</span></h2>
+            <!-- Courses Carousel -->
+            <div class="carousel js-flickity" data-flickity='{"wrapAround": true }'>
+                <div class="carousel-cell"><video src="assets/courses/webdev/lectures/html.mp4"
+                        poster="assets/courses/webdev/thumbnail/webdev.png" controls></video></div>
+                <div class="carousel-cell"><video src="assets/courses/chemistry/lectures/electrochemistry.mp4"
+                        poster="assets/courses/chemistry/thumbnail/electrochemistry.jpg" controls></video>
+                </div>
+                <div class="carousel-cell"><video src="assets/courses/maths/lectures/maths.mp4"
+                        poster="assets/courses/maths/thumbnail/maths.jpg" controls></video></div>
+                <div class="carousel-cell"><video src="assets/courses/python/lectures/python-lec1.mp4"
+                        poster="assets/courses/python/thumbnail/python-lec1.jpg" controls></video></div>
+                <div class="carousel-cell"><video src="assets/courses/cpp/lectures/cpp.mp4"
+                        poster="assets/courses/cpp/thumbnail/cpp.jpg" controls></video></div>
+            </div>
+        </section>
+        <section>
+            <h2><span>College Reviews</span></h2>
+            <!-- College Review Caraousel -->
+            <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/1VfqlKtVF7U"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/zGJ5BlbKfLM"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="carousel-cell iframe-container"><iframe src="https://www.youtube.com/embed/j0biLzzJ2XQ"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+            </div>
+        </section>
+        <section class="study_material">
+            <h2><span>Study Material</span></h2>
+            <!-- Notes Carousel -->
+            <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <a target="_blank" href="assets/courses/chemistry/notes/Class 12 Solution Complete NCERT.pdf"><img
+                            class="img-responsive"
+                            src="assets/courses/chemistry/notes/Class 12 Solution Complete NCERT.png"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="_blank"
+                        href="assets/courses/chemistry/notes/Solid State New Complete Chapter Notes.pdf"><img
+                            class="img-responsive"
+                            src="assets/courses/chemistry/notes/Solid State New Complete Chapter Notes.jpg" alt=""></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="_blank" href="assets/courses/chemistry/notes/Electrochemistry  Complete NCERT.pdf"><img
+                            class="img-responsive"
+                            src="assets/courses/chemistry/notes/Electrochemistry  Complete NCERT.jpg"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="_blank" href="assets/notes/Coordination Compound 3.pdf"><img class="img-responsive"
+                            src="assets/courses/chemistry/notes/Coordination Compound 3.jpg"></a>
+                </div>
+        </section>
+        <section class="our_founder">
+            <h2><span>Our Founder</span></h2>
+
+            <img class="profile_img" src="assets/logo/logo-aman.jpeg" alt="This is Aman Dhattarwal">
+            <h3 class="profile_name">Aman Dhattarwal</h3>
+            <div class="sm-handle">
+                <a class="yt_handle" href="http://www.youtube.com/amandhattarwal" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-youtube fa-lg"></i>YouTube</a>
+                <a class="linkdn_handle" href="http://www.linkedin.com/in/dhattarwalaman" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i>LinkedIn</a>
+                <a class="insta_handle" href="http://www.instagram.com/dhattarwalaman" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i>Instagram</a>
+            </div>
+
+            <div class="about_us">
+                <h4 class="about_title">Young TEDx speaker and #1 Online JEE Educator | Founder of 5 YouTube Channels
+                    with
+                    2.5 million young
+                    hustlers. </h4>
+                <h5 class="about_content">I help students across India find their right career path. I have been a guest
+                    speaker at 22 Colleges
+                    including Top IITs, BITS Pilani, IIIT's, NIT's, SRCC, Jadavpur University etc. I am the #1 Educator
+                    of
+                    JEE on India's biggest online platform
+                    and I believe that everyone has the right to quality education and with the help of my social media
+                    platforms, I have helped millions of students find their path to success in the last 5 years. In the
+                    next few decades, India will rise
+                    as the leader of the world with the maximum young workforce, but for this, we need some good pilots
+                    who
+                    can take us through this. I help these young hustlers find their true potential so that they can fly
+                    us
+                    to victory.</h5>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#" class="flex-align-left">&copy; 2020 | Apni Kaksha</a>
+    </footer>
+    <!-- Flickity JS files -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
